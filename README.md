@@ -1,22 +1,21 @@
-# House Price Predictor
+# ML Mini Projects
 
-Small exploratory project focused on understanding how different housing attributes influence market prices. The work lives primarily in `mini-project.ipynb`, where data is cleaned, visualized, and modeled to predict selling price.
+Two lightweight notebooks for practicing end-to-end ML workflows on structured data.
 
-## Why this project?
-- Practice the full data-science loop on a realistic but manageable dataset.
-- Build intuition about which housing features carry the most predictive signal.
-- Create a foundation for a future API or UI that could surface quick price estimates.
+## Mini Project 1 — House Price Predictor
+- Focus: regression on housing attributes to estimate selling price.
+- Notebook: `mini-project.ipynb`.
+- Data: `public/Housing2.csv` (cleaning, encoding, modeling handled inline in the notebook).
+- Workflow: open the notebook, follow the exploration → feature engineering → modeling flow, and iterate on models/hyperparameters.
 
-## Data
-The raw data currently lives at `public/Housing.csv`. Initial analysis handles basic cleaning (missing values, categorical encoding) directly in the notebook.
-
-## Notebook workflow
-1. Open `mini-project.ipynb` in Jupyter or VS Code.
-2. Step through the exploration, feature engineering, and modeling cells.
-3. Adjust hyperparameters or add new models as needed to compare performance.
+## Mini Project 2 — Titanic Survival Classifier
+- Focus: binary classification (0 = did not survive, 1 = survived) on Titanic passenger records.
+- Notebook: `mini-project2.ipynb`.
+- Data: `public/Titanic-Dataset.csv`. The notebook covers null-imputation (Age, Embarked, Cabin), engineered `HasCabin`, one-hot encoding for `Sex`/`Embarked`, MinMax scaling, and a baseline `DecisionTreeClassifier`.
+- Workflow: run cells sequentially to reproduce preprocessing, train/test split, scaling, and evaluation (accuracy + classification report). Swap in other classifiers (e.g., logistic regression) by modifying the modeling cell.
 
 ## Next steps
-- Convert the notebook insights into reusable Python scripts or a lightweight API.
-- Add automated tests/validation around the data-prep steps.
-- Experiment with richer models (e.g., gradient boosting, neural nets) once the baseline is solid.
+- Promote notebook logic into reusable scripts or an API.
+- Add automated checks around data preprocessing steps.
+- Experiment with richer models (gradient boosting, ensembles, etc.) once baselines are solid.
 
